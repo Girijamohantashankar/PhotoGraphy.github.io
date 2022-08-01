@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus{
+    outline: none;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('img/new.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'roboto', sans-serif;
+}
+.youtube{
+    mask-position: 0%;
+    width: 300px;
+    height: 200px;
+    position: unset;
+
+}
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: rgb(42, 202, 127);
+
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+   
+    font-style: oblique;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.nav-links li {
+    margin: 0 30px;
+    
+}
+.home {
+    padding: 8px 15px;
+    padding-top: 0%;
+    background: #03fceb;
+    border-radius: 5px;
+   
+    
+}
+.ctn {
+    padding: 8px 15px;
+    padding-top: 0%;
+    background: #03fceb;
+    border-radius: 5px;
+    
+}
+
+.form{
+    width: 400px;
+    height: auto;
+    color: rgb(56, 228, 13);
+    font-language-override: unset;
+    font-stretch: condensed;
+    text-transform: capitalize;
+    
+}
+
+.heading{
+    opacity: 0;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+input,
+.submit-btn{
+    opacity: 0;
+    width: 80%;
+    height: 25px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    background: rgba(208, 15, 15, 0.3);
+    border: none;
+    color: rgb(245, 245, 245);
+    padding: 15px;
+    transition: .5s;
+    text-transform: capitalize;
+}
+
+input::placeholder{
+    color: whitesmoke;
+}
+
+input:focus,
+.submit-btn:hover{
+    background: whitesmoke;
+    color: rgb(0, 0, 0);
+}
+
+input:focus::placeholder{
+    color: #000;
+}
+
+.submit-btn{
+    width: auto;
+    padding: 0 20px;
+    cursor: pointer;
+    margin: 50px auto 0;
+    opacity: 0;
+   
+}
+
+.link{
+    opacity: 0;
+    text-align: center;
+    text-transform: capitalize;
+    color: rgba(8, 246, 91, 0.971);
+    display: block;
+    margin: 30px auto;
+    
+    font-style: italic;
+    
+}
+
+.link:hover{
+    color: #fff;
+}
+
+.alert-box{
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 150px;
+    max-width: 90%;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    text-transform: capitalize;
+    background: rgb(230, 16, 16);
+    border-top: 10px solid rgb(255, 37, 37);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #fff;
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+    transition: 1s;
+} 
